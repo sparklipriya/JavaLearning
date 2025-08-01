@@ -89,6 +89,126 @@ public class App {
         float f11 = 74f;
         System.out.println("in celsius: "+ ((f11-32)*5/9));
 
+        // relational operators
+        // order of relational operator is less than arithmetic operator
+        int age=11;
+        if(age>=18){
+            System.out.println("Eligible");
+        }
+        else{
+            System.out.println("Not eligible");
+        }
+
+        // Logical Operators
+        // low priority than math and comparison operators
+    
+        int a=56;
+        int amt=100;
+        double des;
+        boolean male=false;
+        if(a<5){
+            des=amt - ((75.0/100)*amt);
+        }
+        else if(male==false){
+            des=amt-((50.0/100)*amt);
+        }
+        else if(a>60 && male==true){
+            des=amt-((75.0/100)*amt);
+        }
+        else{
+            des=amt;
+        }
+        System.out.println(des);
+        int numb=-34;
+        if(numb<0){
+            System.out.println("Less than zero");
+        }
+        else if(numb>0){
+            System.out.println("Greater than zero");
+        }
+        else{
+            System.out.println("Zero");
+        }
+        int number = 4;
+        if(number%2==0){
+            System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+        int a1=2;
+        int f1=5;
+        int g1=2;
+        if(a1>=f1 && a1>=g1){
+            System.out.println(a1+" is greatest");
+        }
+        else if(f1>=a1 && f1>=g1){
+            System.out.println(f1+" is greatest");
+        }
+        else{
+            System.out.println(g1+" is greatest");
+        }
+        int year =2025;
+        if(year%400==0 || ((year%4==0) && (year%100!=0)))
+        {
+            System.out.println("Leap year");
+        }
+        else {
+            System.out.println("Not leap year");
+        }
+        int grade = 76;
+        if(grade>=90){
+            System.out.println("A");
+        }
+        else if(grade>=75 && grade<90){
+            System.out.println("B");
+        }
+        else if(grade>=60 && grade<75){
+            System.out.println("C");
+        }
+        else if(grade>=30 && grade<60){
+            System.out.println("D");
+        }
+        else{
+            System.out.println("F");
+        }
+        int agee=34;
+        if(agee<13){
+            System.out.println("Child");
+        }
+        else if(agee<20 && agee>=13){
+            System.out.println("Teen");
+        }
+        else if(agee<60 && agee>=20){
+            System.out.println("Adult");
+        }
+        else{
+            System.out.println("Senior");
+        }
+        // bitwise operators
+        int ag=6;
+        int bg=12;
+        System.out.println("AND: "+ (ag&bg));
+        System.out.println("OR: "+ (ag|bg));
+        System.out.println("XOR: "+ (ag^bg));
+        System.out.println("NOT: "+ (~ag));
+        // power 
+        System.out.println("Left: "+ (ag<<4));
+        // division by 2
+        System.out.println("Right: "+ (ag>>1));
+        int no=456;
+        if(((no&1) == 0)){
+            System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+
+        
+
+
+
+
 
 
 
